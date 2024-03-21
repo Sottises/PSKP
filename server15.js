@@ -55,6 +55,12 @@ app.get("/add", (req, res) => {
 app.post("/add", (req, res) => {
   if (!req.body) return res.sendStatus(400);
 
+  // Проверка на ввод только цифр в поле номера телефона
+  const numberRegex = /^\d+$/;
+  if (!numberRegex.test(req.body.number)) {
+    return res.status(400).send("Номер телефона должен содержать только цифры.");
+  }
+
   let lastUserId;
 
   if (users.length > 0) {
@@ -82,6 +88,7 @@ app.post("/add", (req, res) => {
 
 
 
+
 app.get("/update", (req, res) => {
   console.log("[GET/update]");
 
@@ -106,10 +113,17 @@ app.get("/update", (req, res) => {
 app.post("/update", (req, res) => {
   if (!req.body) return res.sendStatus(400);
 
+  const numberRegex = /^\d+$/;
+  if (!numberRegex.test(req.body.number)) {
+    return res.status(400).send("Номер телефона должен содержать только цифры.");
+  }
+
+
   const id = req.body.id;
   const userName = req.body.name;
   const userNumber = req.body.number;
   const index = findUserIndexById(id);
+
 
   if (index > -1) {
     const user = users[index];
