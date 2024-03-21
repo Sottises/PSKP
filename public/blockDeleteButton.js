@@ -23,4 +23,5 @@ function blockDeleteButton() {
 
 document
   .querySelector('input[name="name"]')
+  .querySelector('input[name="number"]')
   .addEventListener("input", blockDeleteButton);
