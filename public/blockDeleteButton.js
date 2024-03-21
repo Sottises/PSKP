@@ -5,7 +5,7 @@ function submitDeleteForm() {
 
 function blockDeleteButton() {
   const nameInput = document.querySelector('input[name="name"]');
-  const nameInput1 = document.querySelector('input[name="name"]');
+  const nameInput1 = document.querySelector('input[name="number"]');
   const deleteButton = document.querySelector(".DelButton");
 
   if (nameInput.value.length > 0) {
