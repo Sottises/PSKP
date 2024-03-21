@@ -1,0 +1,65 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(13, 13, 53);
+}
+
+.container {
+    height: 580px;
+    background-color: rgb(118, 76, 232);
+    text-align: center;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.button {
+    width: 99%;
+    margin-top: 5px;
+    height: 50px;
+    font-size: 18px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(51, 50, 50);
+    font-family: fantasy;
+    margin-right: 20px;
+}
+
+.button span {
+    padding-right: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttonContainer button {
+    margin: 10px 0px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.input {
+    height: 30px;
+    width: 47%;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.contactList {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 350px;
+    background-color: rgb(146, 113, 255);
+    text-align: center;
+}
