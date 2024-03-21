@@ -1,3 +1,3 @@
-// function redirectToAddPage() {
-//   location.href = "http://localhost:3000/add";
-// }
+function redirectToAddPage() {
+  location.href = "http://localhost:3000/add";
+}
